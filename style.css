@@ -1,0 +1,210 @@
+/* リセット */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto",sans-serif;
+  line-height: 1;
+  font-weight: 100;
+}
+.span1{
+  width: 100vw;
+  height: 60vw;
+  max-height: 70vh;
+
+}
+/* ヘッダー画像 */
+.header-image {
+  width: 100vw;
+  height: 60vw;
+  max-height: 70vh;
+  background-image: url('img/header.jpg');
+  
+  background-blend-mode:lighten;
+  background-size:cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-title {
+  color: #fefefe;
+  font-size: 4vw;
+  transform: scale(1.5, 3.5);
+  font-weight: 100;
+}
+
+/* コンセプト全体 */
+.concept {
+  width: 100vw;
+  font-family: "Roboto",sans-serif;
+  line-height: 1;
+  font-weight: 100;
+  background-color: #999;
+}
+
+/* 左：画像 */
+.concept-image {
+  width: 100vw;
+  height: 60vw;
+  background-color: #bbb;
+  background-image: url("img/ryosuke.jpg");
+  background-color:rgba(255, 255, 255,0.5);
+  background-blend-mode:lighten;
+  background-size: cover;
+  background-position: center;
+}
+.concept-hiro {
+  width: 100vw;
+  height: 60vw;
+  background-color: #bbb;
+  background-image: url("img/hiro.png");
+  background-color:rgba(255, 255, 255,0.5);
+  background-blend-mode:lighten;
+  background-size: cover;
+  background-position: center;
+}
+.concept-image2,.concept-image3,.concept-image4{
+  width: auto;
+  height: 60vw;
+  background-color: #bbb;
+  background-size: cover;
+  background-position: center;
+}
+.concept-image2 {
+  background-image: url("img/shurts.png");
+}
+.concept-image3 {
+  background-image: url("img/mock1.png");
+}
+.concept-image4 {
+  background-image: url("img/mock2.png");
+}
+.concept-hiro {
+  background-image: url("img/hiro.png");
+}
+/* 右：テキスト */
+.concept-text {
+  background-color: #333;
+  color:#fefefe;
+  padding: 8vw 6vw;
+  font-weight: 100;
+}
+
+.concept-text h2 {
+  font-size: 5vw;
+  margin-bottom: 4vw;
+  font-weight: 100;
+}
+.concept-text h3 {
+  font-size: 2.5vw;
+}
+.concept-text p {
+  font-size: 1.8vw;
+}
+
+/* ===== 画面が広くなったら左右分割 ===== */
+@media screen and (min-width: 768px) {
+  .concept {
+    display: flex;
+  }
+
+  .concept-image {
+    width: 50vw;
+    height: 100%;
+    min-height: 40vw;
+  }
+  .concept-image2,.concept-image3,.concept-image4{
+    width: 50vw;
+    height: 100%;
+    min-height: 40vw;
+  }
+  .concept-text {
+    width: 50vw;
+    padding: 6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .concept-text h2 {
+    font-size: 3.5vw;
+  }
+  .concept-text h3 {
+    font-size: 2.5vw;
+  }
+  .concept-text p {
+    font-size: 1.8vw;
+  }
+}
+/* バナー */
+.banners {
+  width: 100vw;
+}
+
+.banner {
+  display: block;
+  width: 100vw;
+  height: 30vw;
+  background-color: #999;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner span {
+  font-size: 2vw;
+  transform: scale(1.8, 2.5);
+  letter-spacing: 0.15em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* バナーごとの仮色 */
+.banner-collection {
+  background-color: #444;
+  background-image: url('img/mock1.png');
+  background-color:rgba(107, 74, 43,1);
+  background-blend-mode:lighten;
+  background-size:cover;
+}
+
+.banner-blog {
+  background-color: #666;
+  background-image: url('img/span2.jpg');
+  background-color:rgba(107, 74, 43,1);
+  background-blend-mode:lighten;
+  background-size:cover;
+}
+
+.banner-service {
+  background-color: #888;
+  background-image: url('img/span3.jpg');
+  background-color:rgba(107, 74, 43,1);
+  background-blend-mode:lighten;
+  background-size:cover;
+}
+.banner-top {
+  background-color: #888;
+  background-image: url('img/header.jpg');
+  background-color:rgba(107, 74, 43, 1);
+  background-blend-mode:lighten;
+  background-size:cover;
+}
+.imim{
+  width:40vw;
+  padding: 0 10vw;
+}
+.concept-blog {
+  background-color: #333;
+  color:#fefefe;
+  padding: 8vw 6vw;
+  font-weight: 100;
+  font-size: 2vw;
+}
